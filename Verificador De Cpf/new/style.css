@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body {
+    background-color: rgb(231, 231, 231);
+}
+h3 {
+    font-family: 'Roboto';
+    margin-left: 300px;
+    background-color: rgb(179, 179, 179);
+    margin-right: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3:hover {
+    color: darkgreen;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+h4 {
+    font-family: 'Roboto';
+    margin-left: 400px;
+    font-size: 30px;
+    color:rgb(9, 41, 41)
+}
+h4:hover {
+    color: rgb(216, 84, 84);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+p {
+    font-family: 'Roboto';
+    color: rgb(68, 1, 1);
+    margin-left: 200px;
+    margin-right: 200px
+}
+p:hover {
+    color:#ff0044;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+a {
+    transition: 0.4s;
+    text-decoration: underline;
+    color: black;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+a:hover {
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    color: rgb(6, 6, 240);
+}
+hr {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+table {
+    margin-left: 300px;
+}
+table:hover {
+    color: rgb(103, 44, 143);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.Teste {
+    color: black;
+    font-family: "Roboto";
+    margin-left: 500px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.Teste:hover {
+    border-color: #ff0044;
+    color: #a73050;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.Algorítimo {
+    font-family: "Roboto";
+    margin-left: 500px;
+}
+.Foto {
+    margin-left: 50px;
+}
+#Link {
+    margin-left: 200px;
+}
+.icon-rock {
+    width: 40px;
+}
+.icon-onebitcode {
+    width: 200px;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttonHeader {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.buttonHeader:hover {
+    border-color: #ff0044;
+    color: #a73050;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+}
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}

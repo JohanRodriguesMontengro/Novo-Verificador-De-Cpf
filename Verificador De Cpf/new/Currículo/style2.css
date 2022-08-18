@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(231, 231, 231);
+}
+.button{
+    color:aqua;
+}
+.icon-rock {
+    width: 40px;
+}
+.icon-onebitcode {
+    width: 200px;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttonHeader {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.buttonHeader:hover {
+    border-color: #ff0044;
+    color: #a73050;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}

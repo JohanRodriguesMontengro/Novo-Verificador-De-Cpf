@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Geostar:regular" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img src="./imgs/iconrock-red.svg" alt="Icon-Rock" class=icon-rock></a>
+        <a target="_blank" href="https://programador.onebitcode.com/?ref=C54036552P"><img src="./imgs/logo-onebitcode.svg" alt="Icon-OneBitCode" class="icon-onebitcode"></a>
+        <div class="buttons">
+            <a  href="./index.html">
+                <button class="buttonHeader">
+                    Início
+                </button>
+            </a>
+            <a href="./FAQ.html">
+                <button class="buttonHeader">
+                    FAQ
+                </button>
+            </a>
+            <a href="./Currículo/curriculo.html">
+                <button class="buttonHeader">
+                    Currículo
+                </button>
+            </a>
+        </div>
+    </header><br>
+    <h4>O que é Cpf?:</h4>
+    <hr>
+    <p>O Cadastro de Pessoa Física é o registro de contribuintes mantido pela Receita Federal do Brasil no qual podem se inscrever, uma única vez, quaisquer pessoas naturais, independentemente de idade ou nacionalidade, inclusive falecidas<br>
+    A principal função é servir de identificação dos contribuintes no Imposto de Renda. A partir de 2019, ele passou a ser obrigatório para dependentes de qualquer idade.
+    Mas o CPF não serve só isso. Se você quiser prestar concurso público, abrir conta em banco, pegar empréstimos, financiamentos e cartão de crédito, obter carteira de trabalho e passaporte, vai precisar ter o seu.</p>
+    <a target="_blank" id="Link" href="https://pt.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas">Para mais informações clique aqui!</a>
+    <br>
+    <h4>Como descobrir se é verdadeiro ou não?:</h4>
+    <hr>
+    <p>
+        Pelo site da Receita Federal, além de validar os dados de CPF, você poderá consultar qual o nome da respectiva pessoa e sua situação cadastral atual.<br>
+        Além dessa também tem outras maneiras de se verificar um cpf
+    </p>
+    <h4>1º Forma de validação:</h4>
+    <hr>
+    <p>
+        Em <strong>90%</strong> dos casos, esta simples soma dos números do CPF demonstra a veracidade do documento.<br>
+            <br>
+        Exemplo: Nº do Cpf:<strong> 003.939.708-41:</strong><br>
+
+        Somando-se os números do documento o resultado é 44.<br>
+
+        A soma dos números deve resultar sempre em dois números iguais.<br>
+
+        <strong>Uma outra maneira de verificar a veracidade do documento é conferir o último número antes do dígito, de acordo com a tabela abaixo:</strong><br>
+            <br>
+        Exemplo: Nº do CPF 003.939.708-41<br>
+
+        O número 8, corresponde ao Estado de São Paulo.<br>
+            <br>
+        Veja abaixo o código de Identificação por Estado:<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Estado(s)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>0</th>
+                <th>Rio Grande do Sul</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Distrito Federal – Goiás – Mato Grosso – Mato Grosso do Sul – Tocantins</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Pará – Amazonas – Acre – Amapá – Rondônia – Roraima</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Ceará – Maranhão – Piauí</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Pernambuco – Rio Grande do Norte – Paraíba – Alagoas</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>Bahia - Sergipe</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>Minas Gerais</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <th>Rio de Janeiro – Espírito Santo</th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th>São Paulo</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th>Paraná – Santa Catarina</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h4>2º Forma de validação, usando cálculos:</h4>
+    <hr>
+    <p>O cálculo para validar um Cpf é especificado pelo <a target="_blank" href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp">Ministério da Fazenda</a>, que disponibiliza no próprio site as <a target="_blank" href="http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/funcoes.js">funções</a> (em javascript) para validação de CPF. Vamos entender como funciona.<br>
+    O CPF é formado por 11 dígitos numéricos que seguem a máscara "###.###.###-##", a verificação do CPF acontece utilizando os 9 primeiros dígitos e, com um cálculo simples, verificando se o resultado corresponde aos dois últimos dígitos (depois do sinal "-").
+    </p>
+    <h3>Vamos usar como exemplo, um CPF fictício "529.982.247-25".</h3>
+    <h3>Validação do primeiro dígito:</h3>
+    <p>Primeiramente multiplica-se os 9 primeiros dígitos pela sequência decrescente de números de 10 à 2 e soma os resultados. Assim:</p>
+    <h3>5 * 10 + 2 * 9 + 9 * 8 + 9 * 7 + 8 * 6 + 2 * 5 + 2 * 4 + 4 * 3 + 7 * 2</h3>
+    <p>O resultado do nosso exemplo é:</p>
+    <h3>295</h3>
+    <p>O resultado que nos interessa na verdade é o RESTO da divisão. Se ele for igual ao <strong>primeiro dígito verificador</strong> (primeiro dígito depois do '-'), a primeira parte da validação está correta.<br>
+        <br>
+        <strong>Observação Importante:</strong> Se o resto da divisão for igual a 10, nós o consideramos como 0.<br>
+        <br>
+        Vamos conferir o primeiro dígito verificador do nosso exemplo:
+    </p>
+        <h3>O resultado da divisão acima é '268' e o RESTO é 2</h3>
+        <p>Isso significa que o nosso CPF exemplo passou na validação do primeiro dígito.</p>
+    <h4>Validação do segundo dígito:</h4>
+    <hr>
+    <p>A validação do segundo dígito é semelhante à primeira, porém vamos considerar os 9 primeiros dígitos, mais o primeiro dígito verificador, e vamos multiplicar esses 10 números pela sequencia decrescente de 11 a 2. Vejamos:</p>
+    <h3>5 * 11 + 2 * 10 + 9 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 2 * 5 + 4 * 4 + 7 * 3 + 2 * 2</h3>
+    <p>O resultado é:</p>
+    <h3>347</h3>
+    <p>Seguindo o mesmo processo da primeira verificação, multiplicamos por 10 e dividimos por 11.</p>
+    <h3>347 * 10 / 11</h3>
+    <p>Verificando o RESTO, como fizemos anteriormente, temos:</p>
+    <h3>O resultado da divisão é '315' e o RESTO é 5</h3>
+    <p>Verificamos, se o resto corresponde ao segundo dígito verificador.<br>
+    <br>
+    Com essa verificação, constatamos que o CPF 529.982.247-25 é válido.</p>
+    <h4>Cpfs inválidos conhecidos:</h4>
+    <hr>
+    <p>Existe alguns casos de CPFs que passam nessa validação que expliquei, mas que ainda são inválidos. É os caso dos CPFs com dígitos repetidos (111.111.111-11, 222.222.222-22, ...)<br>
+        <br>
+        Esses CPF atendem à validação, mas ainda são considerados inválidos.
+        <br>
+        No nosso algoritmo, vamos verificar se todos os dígitos do CPF são iguais e, neste caso, considerar que ele é inválido.</p>
+    <hr>
+    <h4>Algoritmo para validar cpf:</h4><br>
+    <input class="Teste" type="button" value="Teste Aqui!" onclick='
+    // Parte em JavaScript
+    var Continue = "S"
+
+    while (Continue == "S") {
+        var Verifier = "S"
+        while (Verifier == "S") {
+            var CpfOfClient = prompt(`Informe seu cpf`)
+    
+            var CpfFalse0 = 00000000000, 
+            CpfFalse1 = 11111111111, 
+            CpfFalse2 = 22222222222, 
+            CpfFalse3 = 33333333333, 
+            CpfFalse4 = 44444444444,
+            CpfFalse5 = 55555555555, 
+            CpfFalse6 = 66666666666, 
+            CpfFalse7 = 77777777777, 
+            CpfFalse8 = 88888888888, 
+            CpfFalse9 = 99999999999
+    
+            if(isNaN(CpfOfClient) || CpfOfClient.length != 11 || 
+            CpfOfClient == CpfFalse0 || 
+            CpfOfClient == CpfFalse1 || 
+            CpfOfClient == CpfFalse2 || 
+            CpfOfClient == CpfFalse3 || 
+            CpfOfClient == CpfFalse4 || 
+            CpfOfClient == CpfFalse5 || 
+            CpfOfClient == CpfFalse6 || 
+            CpfOfClient == CpfFalse7 || 
+            CpfOfClient == CpfFalse8 || 
+            CpfOfClient == CpfFalse9){
+                alert(`Cpf inválido, digite somente números`)
+            } else {
+                Verifier = "N"
+                alert(`Aguarde um instante para verificarmos o seu cpf`)
+            }
+        }
+        var VerifierOfFirstNumber = 
+        CpfOfClient[0] * 10 + CpfOfClient[1] * 9 +
+        CpfOfClient[2] * 8 + CpfOfClient[3] * 7 +
+        CpfOfClient[4] * 6 + CpfOfClient[5] * 5 +
+        CpfOfClient[6] * 4 + CpfOfClient[7] * 3 +
+        CpfOfClient[8] * 2
+        var FirstCalculation = (VerifierOfFirstNumber * 10) % 11 
+        if( FirstCalculation >= 10){
+            FirstCalculation = 0
+        }
+        var VerifierOfSecondNumber =
+        CpfOfClient[0] * 11 + CpfOfClient[1] * 10 +
+        CpfOfClient[2] * 9 + CpfOfClient[3]* 8 +
+        CpfOfClient[4] * 7 + CpfOfClient[5]* 6 +
+        CpfOfClient[6] * 5 + CpfOfClient[7]* 4 +
+        CpfOfClient[8] * 3 + FirstCalculation * 2
+        var SecondCalculation = (VerifierOfSecondNumber * 10) % 11 
+    
+        if(SecondCalculation >= 10) {
+            SecondCalculation = 0
+        }
+        if(FirstCalculation == CpfOfClient[9] && SecondCalculation == CpfOfClient[10]){
+            switch(parseInt(CpfOfClient[8])) {
+                case 0:
+                    alert(`Seu cpf é ${CpfOfClient}, e foi emitido no estado: Rio Grande Do Sul`)
+                    break;
+                case 1:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul ou Tocantins`)
+                    break;
+                case 2:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Amazonas, Pará, Roraima, Amapá, Acre ou Rondônia`)
+                    break;
+                case 3:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Ceará, Maranhão ou Piauí`)
+                    break;
+                case 4:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Paraíba, Pernambuco, Alagoas ou Rio Grande do Norte`) 
+                    break;
+                case 5:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Bahia ou Sergipe`)
+                    break;
+                case 6:
+                    alert(`Seu cpf é ${CpfOfClient}, e foi emitido no estado de: Minas Gerais`)
+                    break;
+                case 7:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Rio de Janeiro ou Espírito Santo`) 
+                    break;
+                case 8:
+                    alert(`Seu cpf é ${CpfOfClient}, e foi emitido no estado de: São Paulo`)
+                    break;
+                default:
+                    alert(`Seu cpf é ${CpfOfClient}, e pode ter sido emitido nos estados de: Paraná ou Santa Catarina`)
+                    break;
+            }
+        } 
+        else {
+            alert(`Seu cpf é falso`)
+        }
+        Continue = prompt(`Deseja verificar mais um cpf? [S]im ou [N]ao`, `S`)
+    }// Fim da parte em JavaScript
+    ' ><br><br>
+    <a class="Algorítimo" target="_blank" href="./novoVerificadorDeCpf.js">Algoritmo em (JavaScript)</a><br><br>
+    <img class="Foto" src="./imgs/FotoCódigo.jpg" alt="" width="1200">
+
+</body>
+</html>

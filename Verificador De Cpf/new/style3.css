@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+a {
+    text-decoration: underline;
+    color: rgb(48, 6, 6);
+}
+body {
+    background-color: rgb(231, 231, 231);
+}
+hr {
+    margin-left: 225px;
+    margin-right: 225px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h1 {
+    text-align: center;
+}
+h1:hover {
+    color:rgb(125, 191, 248);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 39px;
+}
+.questionP {
+    margin-left: 350px;
+    margin-right: 300px;
+}
+.questionP:hover {
+    color: rgb(37, 177, 182);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 19px;
+}
+.question {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.question:hover {
+    color: #ff0044;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 19px;
+}
+.questionList {
+    margin-left: 400px;
+    margin-right: 150px;
+}
+.questionList:hover {
+    color: rgb(255, 9, 9);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 19px;
+}
+.icon-rock {
+    width: 40px;
+}
+.icon-onebitcode {
+    width: 200px;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttonHeader {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.buttonHeader:hover {
+    border-color: #ff0044;
+    color: #a73050;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+}
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
